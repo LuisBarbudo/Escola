@@ -58,6 +58,14 @@ public class Vagas implements Serializable {
     public Boolean getConfirmacao() {
         return confirmacao;
     }
+    
+    public String getConfirmacaoPortugues(){
+        if(confirmacao){
+            return "As vagas ja foram ocupadas";
+        }else{
+            return "A vagas disponiveis";
+    }
+    }
 
     public void setConfirmacao(Boolean confirmacao) {
         this.confirmacao = confirmacao;

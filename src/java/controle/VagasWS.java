@@ -169,12 +169,15 @@ public class VagasWS extends HttpServlet {
             obj.setNomev(nomev);
             boolean confirmacao;
                     if(request.getParameter("txtConfirmacao")!=null)
-                    {
+                    {   
                         confirmacao = true;
+                        
                     }
                     else
-                    {
+                    {   
                         confirmacao = false;
+                            
+                        
                     }
             obj.setConfirmacao(confirmacao);
             VagasDAO dao = new VagasDAO();

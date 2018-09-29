@@ -48,7 +48,12 @@
                                 <tr>
                                     <td>${obj.id}</td>
                                     <td>${obj.nomev}</td>
-                                    <td>${obj.confirmacao}</td>
+                                    <c:if test="${obj.confirmacao == true}"><td>À vagas abertas!</td></c:if>
+                                    <c:if test="${obj.confirmacao == false}"><td>Não à mais vagas!</td></c:if>
+                                    
+                                        
+                                    
+                                    
                                     <td>
                                         <a href="VagasWS?acao=upd&id=${obj.id}" class="btn btn-pill btn-success btn-sm" title="alterar"> 
                                             <i class="fa fa-edit"></i>

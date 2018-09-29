@@ -71,7 +71,8 @@
                                 <c:forEach   items="${vagas}" var="obj">
                                 <tr>
                                     <td>${obj.nomev}</td>
-                                    <td>${obj.confirmacao}</td>
+                                    <c:if test="${obj.confirmacao == true}"><td>À vagas abertas!</td></c:if>
+                                    <c:if test="${obj.confirmacao == false}"><td>Não à mais vagas!</td></c:if>
                                    
                               
                                 </tr>
