@@ -43,12 +43,14 @@
             <a class="nav-link js-scroll-trigger" href="#about">Introdução</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Noticias</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Calendario da matéria</a>
+            <a class="nav-link js-scroll-trigger" href="#education">Calendario da matéria</a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Monitoria</a>
+          </li>
        
         </ul>
       </div>
@@ -58,14 +60,15 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">educacao
-            <span class="text-primary">Bradesco</span>
+          <h1 class="mb-0">Cursos tecnicos
+            <span class="text-primary"></span>
           </h1>
-          <div class="subheading mb-5">Numero:3247-2145,Rua Valle 768 
+          <div class="subheading mb-5">
             <a href="Educacao@gmail.com">Educacao@gmail.com</a>
           </div>
           <p class="mb-5">É com muito prazer que escola (Nome) </p>
-          <a href="siteWS?acao=Usuario&id=${obj.id}">Visualizar lista de alunos que foram aprovados</a>
+          <a href="siteWS?acao=Usuario&id=${obj.id}">Visualizar lista de alunos que foram aprovados Para ingressar na nossa
+          universidade</a>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="#">
@@ -103,34 +106,25 @@
         </div>
       </section>
 
+      
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Março 2013</span>
-            </div>
-          </div>
-
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Feed de Noticias</h2>
+          <h2 class="mb-5">Noticias</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Noticias</h3>
-              <div class="subheading mb-3">Agora temos vagas Abertas para o 1°Ano,2°ano e 7°Ano.</div></br>
+              <h3 class="mb-0">vagas abertas</h3>
+              <div class="subheading mb-3">Venha estudar na melhor universidade do Brasil,
+                  temos vagas abertas para o curso de tecnologo em analise e desenvolvimento de sistemas.</div></br>
               
              
-              <p>Temos um novo laboratorio,o seu filho tem um futuro brilhante.</p>
+              <p>Aqui,o seu filho terá um futuro brilhante.</p></br>
+              <p>Para mais informações entre em contato:4002-8922,ou acesse nosso email:cursostecnicos@outlook.com</p>
             
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Março 2013</span>
+              <span class="text-primary"></span>
             </div>
           </div>
 
@@ -139,14 +133,28 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Calendario</h2>
      <div class="resume-content mr-auto">
-              <div class="subheading mb-3">Aqui você pode consultar as datas de provas,trablhos e eventos.</div>
+              <div class="subheading mb-3">Aqui você pode consultar as datas de provas,trabalhos e eventos.</div>
              
               <p></p>
               <a href="siteWS?acao=Calendario&id=${obj.id}" >Visualizar lista</a>
+
+            </div>
+       
+        </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Vagas para monitoria</h2>
+     <div class="resume-content mr-auto">
+         <div class="subheading mb-3">
+                  Para saber mais informações acesse o link abaixo</div>
+         <a href="siteWS?acao=Vagas&id=${obj.id}" >Visualizar lista</a>
+             
+              <p></p>
 
             </div>
        

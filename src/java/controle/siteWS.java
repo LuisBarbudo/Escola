@@ -7,6 +7,7 @@ package controle;
 
 import dao.CalendarioDAO;
 import dao.UsuarioDAO;
+import dao.VagasDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Calendario;
 import modelo.Usuario;
+import modelo.Vagas;
 
 /**
  *
@@ -64,6 +66,13 @@ public class siteWS extends HttpServlet {
                 request.setAttribute("calendario", this.listarCalendario());
                 pagina = "indexCalendario.jsp";
                 break;
+            case "Vagas":
+                
+                
+                request.setAttribute("vagas", this.listarVagas());
+                pagina = "indexvagas.jsp";
+                break;
+                
                 
             
               
@@ -91,7 +100,14 @@ public class siteWS extends HttpServlet {
         dao.fecharConexao();
         return lista;
     }
-     
+   public List<Vagas> listarVagas()
+    {
+        List<Vagas> lista;
+        VagasDAO dao = new VagasDAO();
+        lista = dao.listar();
+        dao.fecharConexao();
+        return lista;
+    }
 
     /**
      * Handles the HTTP <code>POST</code> method.

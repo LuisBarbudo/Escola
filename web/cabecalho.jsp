@@ -61,6 +61,12 @@
               </a>
               
             </li>
+               <li class="nav-item ">
+              <a class="nav-link" href="../vagas/VagasWS">
+                <i class="nav-icon icon-cursor"></i> Monitoria
+              </a>
+              
+            </li>
          
           </ul>
         </nav>

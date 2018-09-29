@@ -2,9 +2,9 @@
 <main class="main">
     <!-- Breadcrumb-->
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">Usuario</li>
+        <li class="breadcrumb-item">Categoria</li>
         <li class="breadcrumb-item">
-            <a href="UsuarioWS">Listar</a>
+            <a href="VagasWS">Listar</a>
         </li>
         <li class="breadcrumb-item">
             <a href="add.jsp">Incluir</a>
@@ -17,7 +17,7 @@
               <div class="col-lg-auto">
                 <div class="card">
                   <div class="card-header">
-                    Alteração
+                    Exclusão
                   </div>
                   <div class="card-body">
                     ${msg}

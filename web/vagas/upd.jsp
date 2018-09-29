@@ -3,9 +3,9 @@
 <main class="main">
     <!-- Breadcrumb-->
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">Usuario</li>
+        <li class="breadcrumb-item">Vagas</li>
         <li class="breadcrumb-item">
-            <a href="UsuarioWS">Listar</a>
+            <a href="VagasWS">Listar</a>
         </li>
 
     </ol>
@@ -18,7 +18,7 @@
                     Alteração
                   </div>
                   <div class="card-body">
-                      <form action="UsuarioWS" method="post">
+                      <form action="VagasWS" method="post">
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
@@ -34,31 +34,23 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Nome</span>
+                            <span class="input-group-text">Disciplina</span>
                           </div>
-                          <input type="text" value="${obj.nome}" name="txtNome" class="form-control">
+                          <input type="text" value="${obj.nomev}" name="txtNomeV" class="form-control">
                          
                         </div>
                       </div>
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Email</span>
+                            <span class="input-group-text">Aberta?</span>
                           </div>
-                          <input type="text" value="${obj.email}" name="txtEmail" class="form-control">
+                          <input type="checkbox" value="${obj.confirmacao}" name="txtConfirmacao" class="form-control">
                           
                           
                            </div>
                       </div>
-                          <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">Senha</span>
-                          </div>
-                          <input type="text" value="${obj.senha}" name="txtSenha" class="form-control">
-                         
-                        </div>
-                      </div>
+                          
                       <div class="form-group form-actions">
                         <button type="submit" class="btn btn-sm btn-primary">Enviar</button>
                       </div>

@@ -55,29 +55,23 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5"></h2>
+          <h2 class="mb-5">Monitoria</h2>
           <div class="card-body">
                         <table class="table table-responsive-sm">
                             <thead>
                                 <tr>
-                                   
-                                    <th>Dia</th>
-                                    <th>Mês</th>
-                                    <th>Ano</th>
-                                    <th>Descrição</th>
+                                    <th>Nome da disciplina</th>
+                                    <th>Esta aberta?</th>
                                     
 
                                    
                                 </tr>
                             </thead>
                             <tbody>
-                                <c:forEach   items="${calendario}" var="obj">
+                                <c:forEach   items="${vagas}" var="obj">
                                 <tr>
-                                    
-                                    <td>${obj.dia}</td>
-                                    <td>${obj.mes}</td>
-                                    <td>${obj.ano}</td>
-                                    <td>${obj.descricao}</td>
+                                    <td>${obj.nomev}</td>
+                                    <td>${obj.confirmacao}</td>
                                    
                               
                                 </tr>
